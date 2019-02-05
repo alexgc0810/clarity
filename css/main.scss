@@ -1,24 +1,30 @@
 /* Scss Document */
 
-
-
 $main_blue: #66a5dc;
 $main_gray: #e8e8e8;
 
-/*@media (min-widht: 1365.98){
-	html{
-		font-size: 10px;
-	}
-}*/
-/*@include media-breakpoint-down(lg) { 
-	html{
-		font-size: 10px;
-	}
-	
-}*/
 
 body{
 	width: 100%;
+}
+
+h1{
+	font-size: 2.5rem;
+}
+h2{
+	font-size: 2rem;
+}
+h3{
+	font-size: 1.75rem;
+}
+h4{
+	font-size: 1.5rem;
+}
+h5{
+	font-size: 1.25rem;
+}
+h6{
+	font-size: 1rem;
 }
 
 header{
@@ -32,7 +38,7 @@ header{
 	.bottom_bar{
 		width: 100%;
 		height: 6.5rem;
-		padding: 0 3%;
+		padding: 0 5rem;
 		display: inline-flex;
 		.logo_area{
 			margin-top: auto;
@@ -44,10 +50,10 @@ header{
 		.menu_area{
 			height: 100%;
 			display: inline-flex;
-			justify-content: space-between;
+			justify-content: flex-end;
 			a{
 				height: 100%;
-				padding: 3.5% 1%;
+				padding: 2.2rem 1rem;
 				text-align: center;
 				color: #6e6e6d;
 			}
@@ -56,10 +62,21 @@ header{
 				text-decoration: none;
 				color: #ffffff;
 			}
-			h3{
-				font-size: 1.2rem;
+			h6{
 				font-weight: 400;
 			}
+		}
+		#s_menu_area{
+			display: none;
+		}
+		.burger_menu{
+			width: 3rem;
+			height: 2rem;
+			float: right;
+			margin-top: 2rem;
+			background-image: url("../img/burger_menu.png");
+			background-size: contain;
+			background-repeat: no-repeat;
 		}
 	}
 	
@@ -71,10 +88,277 @@ header{
 		height: 31.25rem;
 		width: 100%;
 		object-fit: cover;
+		z-index: 4;
+	}
+	.carousel_filter{
+		width: 100%;
+		height: 31.25rem;
+		position: absolute;
+		background-color: $main_blue;
+		opacity: 0.5;
+		z-index: 7;
+	}
+	.carousel_text{
+		width: 100%;
+		position: absolute;
+		text-align: center;
+		top: 10rem;
+		z-index: 9;
+		h1{
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			color: #ffffff;
+		}
 	}
 }
-.banner{
+
+#services_preview{
+	width: 100%;
+	padding: 5rem 5rem;
+	background-color: #e2e2e2;
+	#services_preview_carousel_lg{
+		display: none;
+	}
+	#services_preview_carousel_md{
+		display: none;
+	}
+	#services_preview_carousel_sm{
+		display: none;
+	}
+	.services_preview_carousel{
+		.carousel-indicators{
+			position: relative;
+			margin-top: 3rem;
+			li{
+				border-radius: 50%;
+				width: 1rem;
+				height: 1rem;
+				background-color: $main_blue;
+			}
+		}
+		.card{
+			max-width: 23%;
+			height: 25rem;
+			border-radius: 1.25rem;
+			img{
+				height: 25rem;
+				object-fit: fill;
+				border-radius: 1.25rem;
+			}
+			.card_filter{
+				height: 25rem;
+				width: 100%;
+				border-radius: 1.25rem;
+				background-color: $main_blue;
+				position: absolute;
+				opacity: 0.5;
+			}
+			.card-body{
+				position: absolute;
+				text-align: center;
+				margin-top: 3rem;
+				.card-title{
+					color: #000000;
+				}
+				.btn-primary{
+					padding: .375rem 1.75rem;
+					background-color: $main_blue;
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	html{
+		font-size: 7px;
+	}
+	#s_menu_area{
+		display: block!important;
+	}
+	#l_menu_area{
+		display: none!important;
+	}
+	header{
+		.bottom_bar{
+			padding: 0rem;
+		}
+	}
+	#homepage_carousel{
+		.carousel_text{
+			h1{
+				width: 90%;
+			}
+		}
+	}
+	
+
+}
+
+@media only screen
+and (min-width : 481px)
+and (max-width : 576px) {
+	html{
+		font-size: 8px;
+	}
+	header{
+		.bottom_bar{
+			padding: 0 2rem;
+		}
+	}
+	#l_menu_area{
+		display: none!important;
+	}
+	#s_menu_area{
+		display: block!important;
+	}
+	#services_preview{
+		#services_preview_carousel_sm{
+			display: block;
+		}
+	}
+}
+
+@media only screen 
+and (min-width : 576px)
+and (max-width : 1023px) {
+	html{
+		font-size: 9px;
+	}
+	header{
+		.bottom_bar{
+			padding: 0 2.5rem;
+		}
+	}
+	#l_menu_area{
+		display: none!important;
+	}
+	#s_menu_area{
+		display: block!important;
+	}
+	#services_preview{
+		#services_preview_carousel_md{
+			display: block;
+		}
+		.services_preview_carousel{
+			.card{
+				max-width: 29%;
+			}
+		}
+	}
+}
+
+@media only screen 
+and (min-width : 824px) {
+	html{
+		font-size: 10px;
+	}
+	header{
+		.bottom_bar{
+			padding: 0 3rem;
+		}
+	}
+}
+
+@media only screen 
+and (min-width : 924px) {
+	html{
+		font-size: 11px;
+	}
+	header{
+		.bottom_bar{
+			padding: 0 3rem;
+		}
+	}
+}
+
+/* XS desktop ------------ */
+@media only screen 
+and (min-width : 1024px) {
+	html{
+		font-size: 12px;
+	}
+	header{
+		.bottom_bar{
+			padding: 0 3.5rem;
+		}
+	}
+	#services_preview{
+		#services_preview_carousel_lg{
+			display: block;
+		}
+	}
+}
+
+@media only screen 
+and (min-width : 1124px) {
+	html{
+		font-size: 13px;
+	}
+	header{
+		.bottom_bar{
+			padding: 0 4rem;
+		}
+	}
 	
 }
+
+/* Small screens ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	html{
+		font-size: 14px;
+	}
+	header{
+		.bottom_bar{
+			padding: 0 4.5rem;
+		}
+	}
+}
+
+@media only screen 
+and (min-width : 1324px) {
+	html{
+		font-size: 15px;
+	}
+	header{
+		.bottom_bar{
+			padding: 0 5rem;
+		}
+	}
+}
+
+/* Mediunm screens ----------- */
+@media only screen 
+and (min-width : 1424px) {
+	html{
+		font-size: 16px;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	
+}
+
+/* Retina displays ----------- */
+/*@media  only screen 
+and (-webkit-min-device-pixel-ratio : 2), 
+only screen 
+and (min-resolution: 192dpi) {
+	html{
+		font-size: 22px;
+	}
+
+}*/
+
 
 
