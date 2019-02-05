@@ -26,7 +26,7 @@ header {
   background-color: #e8e8e8; }
   header .top_bar {
     height: 2rem;
-    background-color: #66a5dc; }
+    background-color: #5596a8; }
   header .bottom_bar {
     width: 100%;
     height: 6.5rem;
@@ -47,7 +47,7 @@ header {
         text-align: center;
         color: #6e6e6d; }
       header .bottom_bar .menu_area a:hover {
-        background-color: #66a5dc;
+        background-color: #5596a8;
         text-decoration: none;
         color: #ffffff; }
       header .bottom_bar .menu_area h6 {
@@ -74,7 +74,7 @@ header {
     width: 100%;
     height: 31.25rem;
     position: absolute;
-    background-color: #66a5dc;
+    background-color: #5596a8;
     opacity: 0.5;
     z-index: 7; }
   #homepage_carousel .carousel_text {
@@ -106,7 +106,7 @@ header {
       border-radius: 50%;
       width: 1rem;
       height: 1rem;
-      background-color: #66a5dc; }
+      background-color: #5596a8; }
   #services_preview .services_preview_carousel .card {
     max-width: 23%;
     height: 25rem;
@@ -119,7 +119,7 @@ header {
       height: 25rem;
       width: 100%;
       border-radius: 1.25rem;
-      background-color: #66a5dc;
+      background-color: #5596a8;
       position: absolute;
       opacity: 0.5; }
     #services_preview .services_preview_carousel .card .card-body {
@@ -130,7 +130,7 @@ header {
         color: #000000; }
       #services_preview .services_preview_carousel .card .card-body .btn-primary {
         padding: .375rem 1.75rem;
-        background-color: #66a5dc;
+        background-color: #5596a8;
         border: none; }
 
 /* Smartphones (portrait and landscape) ----------- */
