@@ -31,6 +31,8 @@ header {
     width: 100%;
     height: 6.5rem;
     padding: 0 5rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex; }
     header .bottom_bar .logo_area {
       margin-top: auto;
@@ -39,7 +41,11 @@ header {
         height: 5rem; }
     header .bottom_bar .menu_area {
       height: 100%;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
       display: inline-flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
       justify-content: flex-end; }
       header .bottom_bar .menu_area a {
         height: 100%;
@@ -68,6 +74,7 @@ header {
   #homepage_carousel img {
     height: 31.25rem;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     z-index: 4; }
   #homepage_carousel .carousel_filter {
@@ -113,6 +120,7 @@ header {
     border-radius: 1.25rem; }
     #services_preview .services_preview_carousel .card img {
       height: 25rem;
+      -o-object-fit: fill;
       object-fit: fill;
       border-radius: 1.25rem; }
     #services_preview .services_preview_carousel .card .card_filter {
@@ -133,99 +141,137 @@ header {
         background-color: #5596a8;
         border: none; }
 
+#about_us_section {
+  position: relative;
+  height: 33rem; }
+  #about_us_section .background {
+    z-index: 1;
+    height: 33rem;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  #about_us_section .white_filter {
+    position: absolute;
+    height: 33rem;
+    z-index: 2;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7); }
+  #about_us_section #text_container {
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 33rem;
+    width: 100%;
+    z-index: 3;
+    padding: 2rem 5rem; }
+    #about_us_section #text_container .about_us_title {
+      margin-bottom: 2rem; }
+    #about_us_section #text_container .about_us_text {
+      text-align: justify;
+      font-size: 1.3rem;
+      margin: 0; }
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   html {
     font-size: 7px; }
-
   #s_menu_area {
     display: block !important; }
-
   #l_menu_area {
     display: none !important; }
-
   header .bottom_bar {
     padding: 0rem; }
-
   #homepage_carousel .carousel_text h1 {
-    width: 90%; } }
+    width: 90%; }
+  #about_us_section {
+    height: 43rem; }
+    #about_us_section .background {
+      height: 45rem; }
+    #about_us_section .white_filter {
+      height: 45rem; }
+    #about_us_section #text_container {
+      height: 45rem; } }
+
 @media only screen and (min-width: 481px) and (max-width: 576px) {
   html {
     font-size: 8px; }
-
   header .bottom_bar {
     padding: 0 2rem; }
-
   #l_menu_area {
     display: none !important; }
-
   #s_menu_area {
     display: block !important; }
-
   #services_preview #services_preview_carousel_sm {
     display: block; } }
+
 @media only screen and (min-width: 576px) and (max-width: 1023px) {
   html {
     font-size: 9px; }
-
   header .bottom_bar {
     padding: 0 2.5rem; }
-
   #l_menu_area {
     display: none !important; }
-
   #s_menu_area {
     display: block !important; }
-
   #services_preview #services_preview_carousel_md {
     display: block; }
   #services_preview .services_preview_carousel .card {
     max-width: 29%; } }
+
 @media only screen and (min-width: 824px) {
   html {
     font-size: 10px; }
-
   header .bottom_bar {
     padding: 0 3rem; } }
+
 @media only screen and (min-width: 924px) {
   html {
     font-size: 11px; }
-
   header .bottom_bar {
     padding: 0 3rem; } }
+
 /* XS desktop ------------ */
 @media only screen and (min-width: 1024px) {
   html {
     font-size: 12px; }
-
   header .bottom_bar {
     padding: 0 3.5rem; }
-
   #services_preview #services_preview_carousel_lg {
     display: block; } }
+
 @media only screen and (min-width: 1124px) {
   html {
     font-size: 13px; }
-
   header .bottom_bar {
     padding: 0 4rem; } }
+
 /* Small screens ----------- */
 @media only screen and (min-width: 1224px) {
   html {
     font-size: 14px; }
-
   header .bottom_bar {
     padding: 0 4.5rem; } }
+
 @media only screen and (min-width: 1324px) {
   html {
     font-size: 15px; }
-
   header .bottom_bar {
     padding: 0 5rem; } }
+
 /* Mediunm screens ----------- */
 @media only screen and (min-width: 1424px) {
   html {
     font-size: 16px; } }
+
 /* Large screens ----------- */
 /* Retina displays ----------- */
 /*@media  only screen 

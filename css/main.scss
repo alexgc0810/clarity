@@ -171,12 +171,50 @@ header{
 	}
 }
 
+#about_us_section{
+	position: relative;
+	height: 33rem;
+
+	.background{
+		z-index: 1;
+		height: 33rem;
+		width: 100%;
+		object-fit: cover;
+	}
+	.white_filter{
+		position: absolute;
+		height:  33rem;
+		z-index: 2;
+		top: 0;
+		background-color: rgba(255,255,255,0.7);
+	}
+	#text_container{
+		position: absolute;
+		top: 0;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 33rem;
+		width: 100%;
+		z-index: 3;
+		padding: 2rem 5rem;
+
+		.about_us_title{
+			margin-bottom: 2rem;
+		}
+		.about_us_text{
+			text-align: justify;
+			font-size: 1.3rem;
+			margin: 0;
+		}
+	}
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (min-width : 320px) 
+and (max-width : 480px) {
 	html{
 		font-size: 7px;
 	}
@@ -199,7 +237,19 @@ and (max-device-width : 480px) {
 		}
 	}
 	
+	#about_us_section{
+	height: 43rem;
 
+		.background{
+			height: 45rem;
+		}
+		.white_filter{
+			height:  45rem;
+		}
+		#text_container{
+			height:  45rem;
+		}
+	}
 }
 
 @media only screen
