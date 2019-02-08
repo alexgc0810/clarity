@@ -23,13 +23,13 @@
 			</div>
 			<div id="l_menu_area" class="menu_area col-9">
 			
-				<a href=""><h6>INICIO</h6></a>
-				<a href=""><h6>SERVICIOS</h6></a>
-				<a href=""><h6>QUIENES SOMOS</h6></a>
-				<a href=""><h6>PREGUNTAS</h6></a>
-				<a href=""><h6>CONTACTO</h6></a>
-				<a href=""><h6>NUESTRO STAFF</h6></a>
-				<a href=""><h6>NUESTROS CASOS</h6></a>
+				<a class="btn_inicio" href="index.html"><h6>INICIO</h6></a>
+				<a class="btn_servicios" href="services.html"><h6>SERVICIOS</h6></a>
+				<a class="btn_quienes_somos" href="about_us.html"><h6>QUIENES SOMOS</h6></a>
+				<a class="btn_preguntas" href=""><h6>PREGUNTAS</h6></a>
+				<a class="btn_contacto" href="contact.html"><h6>CONTACTO</h6></a>
+				<a class="btn_staff hide" href=""><h6>NUESTRO STAFF</h6></a>
+				<a class="btn_casos hide" href=""><h6>NUESTROS CASOS</h6></a>
 
 			
 			</div>
@@ -39,13 +39,13 @@
 				   <div class="burger_menu" id="s_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
 				   </div>
 				   <div class="dropdown-menu" aria-labelledby="s_menu">
-					  <button class="dropdown-item" type="button"><h3>INICIO</h3></button>
-					  <button class="dropdown-item" type="button"><h3>SERVICIOS</h3></button>
-					  <button class="dropdown-item" type="button"><h3>QUIENES SOMOS</h3></button>
-					  <button class="dropdown-item" type="button"><h3>PREGUNTAS</h3></button>
-					  <button class="dropdown-item" type="button"><h3>CONTACTO</h3></button>
-					  <button class="dropdown-item" type="button"><h3>NUESTRO STAFF</h3></button>
-					  <button class="dropdown-item" type="button"><h3>NUESTROS CASOS</h3></button>
+					  <button class="dropdown-item" type="button" onClick="location.href='index.html'"><h3>INICIO</h3></button>
+					  <button class="dropdown-item" type="button" onClick="location.href='services.html'"><h3>SERVICIOS</h3></button>
+					  <button class="dropdown-item" type="button" onClick="location.href='about_us.html'"><h3>QUIENES SOMOS</h3></button>
+					  <button class="dropdown-item" type="button" onClick="location.href='index.html'"><h3>PREGUNTAS</h3></button>
+					  <button class="dropdown-item" type="button" onClick="location.href='contact.html'"><h3>CONTACTO</h3></button>
+					  <button class="dropdown-item hide" type="button" onClick="location.href='index.html'"><h3>NUESTRO STAFF</h3></button>
+					  <button class="dropdown-item hide" type="button" onClick="location.href='index.html'"><h3>NUESTROS CASOS</h3></button>
 				   </div>
 				</div>
 				
@@ -75,7 +75,7 @@
 	
 	<section id="services_preview">
 	
-		<div id="services_preview_carousel_lg" class="carousel slide services_preview_carousel" data-ride="">
+		<div id="services_preview_carousel_lg" class="carousel slide services_preview_carousel" data-ride="carousel">
 		  <div class="carousel-inner">
 			<div class="carousel-item active">
 				<div class="card-deck">
@@ -157,7 +157,7 @@
 		  </ol>
 		</div>
 		
-		<div id="services_preview_carousel_md" class="services_preview_carousel carousel slide" data-ride="">
+		<div id="services_preview_carousel_md" class="services_preview_carousel carousel slide" data-ride="carousel">
 		  <div class="carousel-inner">
 			<div class="carousel-item active">
 			  
@@ -245,34 +245,117 @@
 		  </ol>
 		</div>
 		
-		<div id="services_preview_carousel_sm" class="services_preview_carousel" data-ride="">
-			  <div class="card">
-				<img src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-				  <h5 class="card-title">Card title</h5>
-				  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-				  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-				</div>
-			  </div>
-			  <div class="card">
-				<img src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-				  <h5 class="card-title">Card title</h5>
-				  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-				  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-				</div>
-			  </div>
-			  <div class="card">
-				<img src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-				  <h5 class="card-title">Card title</h5>
-				  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-				  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-				</div>
-			  </div>
+		<div id="services_preview_carousel_sm" class="services_preview_carousel carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+				<ul>
+					<li>
+						<img src="img/4x/Asset 2.jpg" alt="">
+					</li>
+					<li class="padding_2">
+						<h2 class="card-title">Volumetria Hepatica</h2>
+					  	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</li>
+					<button class="btn btn-primary">+</button>
+				</ul>
+			</div>
+			<div class="carousel-item">
+				<ul>
+					<li>
+						<img src="img/4x/Asset 2.jpg" alt="">
+					</li>
+					<li class="padding_2">
+						<h2 class="card-title">Volumetria Renal</h2>
+					  	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</li>
+					<button class="btn btn-primary">+</button>
+				</ul>
+			</div>
+			<div class="carousel-item">
+				<ul>
+					<li>
+						<img src="img/4x/Asset 2.jpg" alt="">
+					</li>
+					<li class="padding_2">
+						<h2 class="card-title">Planeamiento Quirurjico</h2>
+					  	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</li>
+					<button class="btn btn-primary"><h1>+</h1></button>
+				</ul>
+			</div>
+			<div class="carousel-item">
+				<ul>
+					<li>
+						<img src="img/4x/Asset 2.jpg" alt="">
+					</li>
+					<li class="padding_2">
+						<h2 class="card-title">Nodulo Pulmonar</h2>
+					  	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</li>
+					<button class="btn btn-primary">+</button>
+				</ul>
+			</div>
+			<div class="carousel-item">
+				<ul>
+					<li>
+						<img src="img/4x/Asset 2.jpg" alt="">
+					</li>
+					<li class="padding_2">
+						<h2 class="card-title">Analisis Pulmonar</h2>
+					  	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</li>
+					<button class="btn btn-primary">+</button>
+				</ul>
+			</div>
+			<div class="carousel-item">
+				<ul>
+					<li>
+						<img src="img/4x/Asset 2.jpg" alt="">
+					</li>
+					<li class="padding_2">
+						<h2 class="card-title">Seguimiento Oncolojico</h2>
+					  	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</li>
+					<button class="btn btn-primary">+</button>
+				</ul>
+			</div>
+			<div class="carousel-item">
+				<ul>
+					<li>
+						<img src="img/4x/Asset 2.jpg" alt="">
+					</li>
+					<li class="padding_2">
+						<h2 class="card-title">PostProcesado Vascular</h2>
+					  	<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</li>
+					<button class="btn btn-primary">+</button>
+				</ul>
+			</div>
+			
+		  </div>
+		  <ol class="carousel-indicators">
+			<li data-target="#services_preview_carousel_sm" data-slide-to="0" class="active"></li>
+			<li data-target="#services_preview_carousel_sm" data-slide-to="1" ></li>
+			<li data-target="#services_preview_carousel_sm" data-slide-to="2" ></li>
+			<li data-target="#services_preview_carousel_sm" data-slide-to="3" ></li>
+			<li data-target="#services_preview_carousel_sm" data-slide-to="4" ></li>	
+			<li data-target="#services_preview_carousel_sm" data-slide-to="5" ></li>
+			<li data-target="#services_preview_carousel_sm" data-slide-to="6"></li>
+		  </ol>
 		</div>
 		
 	</section>
+	
+	<div id="about_us_section">
+		<img class="w-100 background" src="img/Asset 1.png" alt="background">
+		<div class="w-100 white_filter"></div>
+		<div id="text_container">
+			<h1 class="about_us_title">Quiénes Somos</h1>
+			<p class="about_us_text">Clarity es un laboratorio de Radiología, dedicado al empleo de tecnología avanzada en el procesado de imágenes, con inteligencia artificial (Synapse 3D). Se obtienen reconstrucciones tridimensionales impecables, logrando separar los órganos y lesiones tumorales, para poder realizar distintos análisis como volumetrías (calcular el tamaño de un tumor y el órgano que lo contiene), planeamiento quirúrgico (hacer cortes dirigidos en los órganos y territorios vasculares), comparaciones de seguimiento oncológicos (determinar si hay crecimiento de las lesiones tumores en distintos órganos, cuando se tienen estudios anteriores), endoscopia virtual, entre otras herramientas. Clarity va a permitir una mejor compresión de la enfermedad y la anatomía por parte del medico tratante, sea para cirugía o seguimiento.
+			<br>
+			Nuestro equipo esta conformado por médicos especialistas con gran expertise en su campo, así como tecnólogos familiarizados con el manejo avanzado de imágenes. Nuestra meta es poner al alcance de los pacientes tecnología de punta para mejorar el manejo por parte del medico tratante.</p>
+		</div>
+	</div>
 	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
