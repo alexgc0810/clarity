@@ -36,8 +36,9 @@ h6{
 }
 
 .padding_2{
-				padding: 2rem;
-			}
+	padding: 2rem;
+}
+
 header{
 	width: 100%;
 	height: 8.5rem;
@@ -150,8 +151,22 @@ header{
 		}
 		img{
 			width: 100%;
-    		height: 20rem;
-    		object-fit: cover;
+			height: 40rem;
+    		object-fit: contain;
+    		padding: 1rem;
+		}
+		.card_filter{
+			height: 40rem;
+			width: 100%;
+			top: 0;
+			background-color: #6e6f6e;
+			position: absolute;
+			opacity: 0.5;
+		}
+		.text{
+			position: absolute;
+    		top: 20rem;
+			color: #ffffff;
 		}
 		.btn{
 			position: absolute;
@@ -187,14 +202,15 @@ header{
 			border-radius: 1.25rem;
 			img{
 				height: 25rem;
-				object-fit: fill;
+				object-fit: scale-down;
 				border-radius: 1.25rem;
+				padding: 1rem;
 			}
 			.card_filter{
 				height: 25rem;
 				width: 100%;
 				border-radius: 1.25rem;
-				background-color: $main_blue;
+				background-color: #6e6f6e;
 				position: absolute;
 				opacity: 0.5;
 			}
@@ -234,7 +250,7 @@ header{
 		z-index: 2;
 		top: 0;
 		background-color: $main_blue;
-		opacity: 0.3;
+		opacity: 0.5;
 	}
 	#text_container{
 		position: absolute;
@@ -356,6 +372,11 @@ header{
 				line-height: 2.5rem;
 				margin: 0;
 				text-align: justify;
+			}
+			.info_price{
+				margin-top: 3rem;
+				color: #6e6f6e;
+				text-align: center;
 			}
 		}
 
@@ -493,7 +514,7 @@ header{
 and (min-width : 320px) 
 and (max-width : 480px) {
 	html{
-		font-size: 7px;
+		font-size: 9px;
 	}
 	#s_menu_area{
 		display: block!important;
@@ -512,23 +533,42 @@ and (max-width : 480px) {
 				width: 90%;
 			}
 		}
-	}	#services_preview{
+	}	
+	#services_preview{
 		padding: 5rem 2rem;
 		#services_preview_carousel_sm{
 			display: block;
 		}
 	}
+	#services_section{
+		#button_section{
+			padding: 2rem 0rem!important;
+		}
+		#service_section{
+			margin: 2rem 2rem;
+		}
+	}
 	#about_us_section{
-	height: 43rem;
+	height: 53rem;
 
 		.background{
-			height: 45rem;
+			height: 53rem;
 		}
 		.white_filter{
-			height:  45rem;
+			height:  53rem;
 		}
 		#text_container{
-			height:  45rem;
+			height:  53rem;
+			padding: 2rem 2rem;
+		}
+	}
+	#contact_section{
+		#contact_container{
+			margin: 2rem;
+		}
+		.info_container{
+			text-align: center;
+			font-size: 1.5rem!important;
 		}
 	}
 }
@@ -537,7 +577,7 @@ and (max-width : 480px) {
 and (min-width : 481px)
 and (max-width : 576px) {
 	html{
-		font-size: 8px;
+		font-size: 10px;
 	}
 	header{
 		.bottom_bar{
@@ -555,13 +595,27 @@ and (max-width : 576px) {
 			display: block;
 		}
 	}
+	#about_us_section{
+	height: 53rem;
+
+		.background{
+			height: 53rem;
+		}
+		.white_filter{
+			height:  53rem;
+		}
+		#text_container{
+			height:  53rem;
+			padding: 2rem 2rem;
+		}
+	}
 }
 
 @media only screen 
 and (min-width : 576px)
 and (max-width : 1023px) {
 	html{
-		font-size: 9px;
+		font-size: 11px;
 	}
 	header{
 		.bottom_bar{
@@ -575,7 +629,7 @@ and (max-width : 1023px) {
 		display: block!important;
 	}
 	#services_preview{
-		#services_preview_carousel_md{
+		#services_preview_carousel_lg{
 			display: block;
 		}
 		.services_preview_carousel{
@@ -589,7 +643,7 @@ and (max-width : 1023px) {
 @media only screen 
 and (min-width : 824px) {
 	html{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	header{
 		.bottom_bar{
@@ -601,7 +655,7 @@ and (min-width : 824px) {
 @media only screen 
 and (min-width : 924px) {
 	html{
-		font-size: 11px;
+		font-size: 13px;
 	}
 	header{
 		.bottom_bar{
@@ -614,7 +668,7 @@ and (min-width : 924px) {
 @media only screen 
 and (min-width : 1024px) {
 	html{
-		font-size: 12px;
+		font-size: 13px;
 	}
 	header{
 		.bottom_bar{

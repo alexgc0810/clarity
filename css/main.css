@@ -40,8 +40,6 @@ header {
     width: 100%;
     height: 6.5rem;
     padding: 0 5rem;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex; }
     header .bottom_bar .logo_area {
       margin-top: auto;
@@ -50,11 +48,7 @@ header {
         height: 5rem; }
     header .bottom_bar .menu_area {
       height: 100%;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
       display: inline-flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
       justify-content: flex-end; }
       header .bottom_bar .menu_area a {
         height: 100%;
@@ -83,7 +77,6 @@ header {
   #homepage_carousel img {
     height: 31.25rem;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     z-index: 4; }
   #homepage_carousel .carousel_filter {
@@ -126,9 +119,20 @@ header {
         font-size: 1.5rem; }
     #services_preview #services_preview_carousel_sm img {
       width: 100%;
-      height: 20rem;
-      -o-object-fit: cover;
-      object-fit: cover; }
+      height: 40rem;
+      object-fit: contain;
+      padding: 1rem; }
+    #services_preview #services_preview_carousel_sm .card_filter {
+      height: 40rem;
+      width: 100%;
+      top: 0;
+      background-color: #6e6f6e;
+      position: absolute;
+      opacity: 0.5; }
+    #services_preview #services_preview_carousel_sm .text {
+      position: absolute;
+      top: 20rem;
+      color: #ffffff; }
     #services_preview #services_preview_carousel_sm .btn {
       position: absolute;
       bottom: 2rem;
@@ -138,11 +142,7 @@ header {
       width: 5rem !important;
       background-color: #66a5dc;
       border: none;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       font-size: 3rem; }
   #services_preview .services_preview_carousel .carousel-indicators {
@@ -154,7 +154,6 @@ header {
       height: 1rem;
       background-color: #66a5dc; }
   #services_preview .services_preview_carousel .card-deck {
-    -ms-flex-pack: distribute;
     justify-content: space-around; }
   #services_preview .services_preview_carousel .card {
     max-width: 23%;
@@ -162,14 +161,14 @@ header {
     border-radius: 1.25rem; }
     #services_preview .services_preview_carousel .card img {
       height: 25rem;
-      -o-object-fit: fill;
-      object-fit: fill;
-      border-radius: 1.25rem; }
+      object-fit: scale-down;
+      border-radius: 1.25rem;
+      padding: 1rem; }
     #services_preview .services_preview_carousel .card .card_filter {
       height: 25rem;
       width: 100%;
       border-radius: 1.25rem;
-      background-color: #66a5dc;
+      background-color: #6e6f6e;
       position: absolute;
       opacity: 0.5; }
     #services_preview .services_preview_carousel .card .card-body {
@@ -178,14 +177,8 @@ header {
       position: absolute;
       text-align: center;
       color: #ffffff;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
       flex-direction: column;
-      -ms-flex-pack: distribute;
       justify-content: space-around; }
       #services_preview .services_preview_carousel .card .card-body .btn-primary {
         padding: .375rem 1.75rem;
@@ -200,7 +193,6 @@ header {
     z-index: 1;
     height: 33rem;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover; }
   #about_us_section .white_filter {
     position: absolute;
@@ -208,19 +200,12 @@ header {
     z-index: 2;
     top: 0;
     background-color: #66a5dc;
-    opacity: 0.3; }
+    opacity: 0.5; }
   #about_us_section #text_container {
     position: absolute;
     top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     height: 33rem;
     width: 100%;
@@ -241,7 +226,6 @@ header {
     z-index: 1;
     height: 20rem;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover; }
   #sevices_section #services_banner .white_filter {
     position: absolute;
@@ -256,59 +240,27 @@ header {
     top: 0;
     height: 20rem;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center; }
     #sevices_section #services_banner .title_container .title {
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
       width: fit-content; }
-
 #sevices_section #button_section {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 2rem 5rem;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
   #sevices_section #button_section .service_button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 7rem;
     width: 13rem;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin: 2rem;
     border-radius: 13px;
@@ -319,41 +271,19 @@ header {
     background-color: #34a9e1; }
   #sevices_section #button_section .turquoise_button {
     background-color: #28afb5; }
-
 #sevices_section #service_section {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 2rem 10rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
   #sevices_section #service_section .info_section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-color: #e8e8e8;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     width: 45rem;
     padding: 0 2.5rem 2rem 2.5rem;
@@ -367,10 +297,13 @@ header {
       line-height: 2.5rem;
       margin: 0;
       text-align: justify; }
+    #sevices_section #service_section .info_section .info_price {
+      margin-top: 3rem;
+      color: #6e6f6e;
+      text-align: center; }
   #sevices_section #service_section .service_img {
     width: 25rem;
     height: 28rem;
-    -o-object-fit: cover;
     object-fit: cover;
     margin: 2rem; }
 
@@ -382,7 +315,6 @@ header {
     z-index: 1;
     height: 20rem;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover; }
   #contact_section #contact_banner .white_filter {
     position: absolute;
@@ -397,64 +329,31 @@ header {
     top: 0;
     height: 20rem;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center; }
     #contact_section #contact_banner .title_container .title {
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
       width: fit-content; }
-
 #contact_section #contact_container {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   margin: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
   #contact_section #contact_container .contact_form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 35rem;
     height: 40rem;
     background-color: #e8e8e8;
     border-radius: 13px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 3.5rem;
     margin: 2rem; }
     #contact_section #contact_container .contact_form .form_title {
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
       width: fit-content;
       margin: 0 0 3.5rem 0;
       padding-bottom: 1rem;
@@ -492,11 +391,7 @@ header {
     padding: 3.5rem;
     padding-top: auto;
     padding-bottom: auto;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     font-size: 1.2rem; }
     #contact_section #contact_container .info_container .social_img {
@@ -506,99 +401,132 @@ header {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   html {
-    font-size: 7px; }
+    font-size: 9px; }
+
   #s_menu_area {
     display: block !important; }
+
   #l_menu_area {
     display: none !important; }
+
   header .bottom_bar {
     padding: 0rem; }
+
   #homepage_carousel .carousel_text h1 {
     width: 90%; }
+
   #services_preview {
     padding: 5rem 2rem; }
     #services_preview #services_preview_carousel_sm {
       display: block; }
-  #about_us_section {
-    height: 43rem; }
-    #about_us_section .background {
-      height: 45rem; }
-    #about_us_section .white_filter {
-      height: 45rem; }
-    #about_us_section #text_container {
-      height: 45rem; } }
 
+  #services_section #button_section {
+    padding: 2rem 0rem !important; }
+  #services_section #service_section {
+    margin: 2rem 2rem; }
+
+  #about_us_section {
+    height: 53rem; }
+    #about_us_section .background {
+      height: 53rem; }
+    #about_us_section .white_filter {
+      height: 53rem; }
+    #about_us_section #text_container {
+      height: 53rem;
+      padding: 2rem 2rem; }
+
+  #contact_section #contact_container {
+    margin: 2rem; }
+  #contact_section .info_container {
+    text-align: center;
+    font-size: 1.5rem !important; } }
 @media only screen and (min-width: 481px) and (max-width: 576px) {
   html {
-    font-size: 8px; }
+    font-size: 10px; }
+
   header .bottom_bar {
     padding: 0 2rem; }
+
   #l_menu_area {
     display: none !important; }
+
   #s_menu_area {
     display: block !important; }
-  #services_preview #services_preview_carousel_sm {
-    display: block; } }
 
+  #services_preview #services_preview_carousel_sm {
+    display: block; }
+
+  #about_us_section {
+    height: 53rem; }
+    #about_us_section .background {
+      height: 53rem; }
+    #about_us_section .white_filter {
+      height: 53rem; }
+    #about_us_section #text_container {
+      height: 53rem;
+      padding: 2rem 2rem; } }
 @media only screen and (min-width: 576px) and (max-width: 1023px) {
   html {
-    font-size: 9px; }
+    font-size: 11px; }
+
   header .bottom_bar {
     padding: 0 2.5rem; }
+
   #l_menu_area {
     display: none !important; }
+
   #s_menu_area {
     display: block !important; }
-  #services_preview #services_preview_carousel_md {
+
+  #services_preview #services_preview_carousel_lg {
     display: block; }
   #services_preview .services_preview_carousel .card {
     max-width: 29%; } }
-
 @media only screen and (min-width: 824px) {
   html {
-    font-size: 10px; }
+    font-size: 12px; }
+
   header .bottom_bar {
     padding: 0 3rem; } }
-
 @media only screen and (min-width: 924px) {
   html {
-    font-size: 11px; }
+    font-size: 13px; }
+
   header .bottom_bar {
     padding: 0 3rem; } }
-
 /* XS desktop ------------ */
 @media only screen and (min-width: 1024px) {
   html {
-    font-size: 12px; }
+    font-size: 13px; }
+
   header .bottom_bar {
     padding: 0 3.5rem; }
+
   #services_preview #services_preview_carousel_lg {
     display: block; } }
-
 @media only screen and (min-width: 1124px) {
   html {
     font-size: 13px; }
+
   header .bottom_bar {
     padding: 0 4rem; } }
-
 /* Small screens ----------- */
 @media only screen and (min-width: 1224px) {
   html {
     font-size: 14px; }
+
   header .bottom_bar {
     padding: 0 4.5rem; } }
-
 @media only screen and (min-width: 1324px) {
   html {
     font-size: 15px; }
+
   header .bottom_bar {
     padding: 0 5rem; } }
-
 /* Mediunm screens ----------- */
 @media only screen and (min-width: 1424px) {
   html {
     font-size: 16px; } }
-
 /* Large screens ----------- */
 /* Retina displays ----------- */
 /*@media  only screen 

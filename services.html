@@ -10,6 +10,7 @@
 
 <body>
 
+
 	<header>
 	
 		<div class="top_bar col-12"></div>
@@ -26,7 +27,7 @@
 				<a class="btn_inicio" href="index.html"><h6>INICIO</h6></a>
 				<a class="btn_servicios" href="services.html"><h6>SERVICIOS</h6></a>
 				<a class="btn_quienes_somos" href="about_us.html"><h6>QUIENES SOMOS</h6></a>
-				<a class="btn_preguntas" href=""><h6>PREGUNTAS</h6></a>
+				<a class="btn_preguntas hide" href=""><h6>PREGUNTAS</h6></a>
 				<a class="btn_contacto" href="contact.html"><h6>CONTACTO</h6></a>
 				<a class="btn_staff hide" href=""><h6>NUESTRO STAFF</h6></a>
 				<a class="btn_casos hide" href=""><h6>NUESTROS CASOS</h6></a>
@@ -42,7 +43,7 @@
 					  <button class="dropdown-item" type="button" onClick="location.href='index.html'"><h3>INICIO</h3></button>
 					  <button class="dropdown-item" type="button" onClick="location.href='services.html'"><h3>SERVICIOS</h3></button>
 					  <button class="dropdown-item" type="button" onClick="location.href='about_us.html'"><h3>QUIENES SOMOS</h3></button>
-					  <button class="dropdown-item" type="button" onClick="location.href='index.html'"><h3>PREGUNTAS</h3></button>
+					  <button class="dropdown-item hide" type="button" onClick="location.href='index.html'"><h3>PREGUNTAS</h3></button>
 					  <button class="dropdown-item" type="button" onClick="location.href='contact.html'"><h3>CONTACTO</h3></button>
 					  <button class="dropdown-item hide" type="button" onClick="location.href='index.html'"><h3>NUESTRO STAFF</h3></button>
 					  <button class="dropdown-item hide" type="button" onClick="location.href='index.html'"><h3>NUESTROS CASOS</h3></button>
@@ -64,25 +65,71 @@
 			</div>
 		</div>
 		<div id="button_section">
-			<button class="service_button blue_button">Volumetria Hepatítica</button>
-			<button class="service_button turquoise_button">Volumetria Renal</button>
-			<button class="service_button blue_button">Planeamiento Quirúrgico</button>
-			<button class="service_button turquoise_button">Nodulo Pulmonar</button>
-			<button class="service_button blue_button">Análisis Pulmonar</button>
-			<button class="service_button turquoise_button">Seguimiento Oconologico</button>
-			<button class="service_button blue_button">Postprocesado Vascular</button>
+			<button id="btn_volumetria_hepatica" class="service_button blue_button">Volumetria Hepatíca</button>
+			<button id="btn_volumetria_renal" class="service_button turquoise_button">Volumetria Renal</button>
+			<button id="btn_planeamiento_quirurjico" class="service_button blue_button">Planeamiento Quirúrgico</button>
+			<button id="btn_analisis_pulmonar" class="service_button blue_button">Análisis Pulmonar</button>
+			<button id="btn_seguimiento_oncologico" class="service_button turquoise_button">Seguimiento Oncologico</button>
+			<button id="btn_postprocesado_vascular" class="service_button blue_button">Postprocesado Vascular</button>
 		</div>
-		<div id="service_section">
+		<div id="service_section"></div>
+	</div>
+	<div id="services" hidden="true">
+		<div id="volumetria_hepatica">
 			<div class="info_section">
-				<h2 class="info_title">VOLUMETRIA RENAL</h2>
-				<p class="info-text">Consiste en una avanzada técnica de manipulación para el post procesado de imágenes mediante segmentación asistida con Inteligencia Artificial, utilizando el software Synapse 3D. Se obtiene imágenes tridimensionales los riñones, su relación con estructuras óseas, así como imágenes del sistema vascular y excretor (ureteros). Se puede identificar masas o tumores, cálculos y quistes. Se pueden obtener volúmenes, y aplicar diversos planeamientos quirúrgicos que mejora la toma de decisiones. Se puede realizar simulación de endoscopía, una vez que el cirujano establezca el posible abordaje. Se realiza a partir de imágenes de TC, pudiendo mezclar varias fases de contraste.</p>
+				<h2 class="info_title">Volumetría Hepática</h2>
+				<p class="info-text">Se obtiene imágenes tridimensionales del hígado, su sistema vascular y tumores o lesiones focales. Se pueden obtener volúmenes, y aplicar diversos planeamientos quirúrgicos. Se realiza a partir de imágenes de TC, pudiendo mezclar varias fases de contraste.</p>
+				<h4 class="info_price">Precio: $100 dolares</h4>
 			</div>
 			<img class="service_img" src="img/volumetria_renal_1.png" alt="">
 		</div>
+		<div id="volumetria_renal">
+			<div class="info_section">
+				<h2 class="info_title">Volumetría Renal</h2>
+				<p class="info-text">Se obtiene imágenes tridimensionales los riñones, su relación con estructuras óseas, así como imágenes del sistema vascular y excretor (ureteros). Se puede identificar masas o tumores, cálculos y quistes. Se pueden obtener volúmenes, y aplicar diversos planeamientos quirúrgicos que mejora la toma de decisiones. Se puede realizar simulación de laparoscopía, una vez que el cirujano establezca el posible abordaje. Se realiza a partir de imágenes de TC, pudiendo mezclar varias fases de contraste.</p>
+				<h4 class="info_price">Precio: $100 dolares</h4>
+			</div>
+			<img class="service_img" src="img/volumetria_renal_1.png" alt="">
+		</div>
+		<div id="planeamiento_quirurgico">
+			<div class="info_section">
+				<h2 class="info_title">Planeamiento Quirúrgico</h2>
+				<p class="info-text">En hígado, riñón y pulmón. Uso de software basado en Inteligencia Artificial, para reconocimiento de estructuras anatómicas, poder diferenciar diferentes lesiones y realizar imágenes 3D pudiendo realizar diversas simulaciones de cirugía.</p>
+				<h4 class="info_price">Precio: $100 dolares</h4>
+			</div>
+			<img class="service_img" src="img/volumetria_renal_1.png" alt="">
+		</div>
+		<div id="analisis_pulmonar">
+			<div class="info_section">
+				<h2 class="info_title">Análisis Pulmonar</h2>
+				<p class="info-text">Postprocesado avanzado basado en TC de tórax, se localiza el Nódulo, pudiendo ubicarlo con respecto a estructuras anatómicas como las cisuras o costillas; se segmenta el pulmón y se puede realizar reconstrucción de la vía aérea bronquial (broncoscopía virtual) para trazar el camino más cercano a la lesión. Se realiza análisis por histograma del nódulo. Se puede calcular volúmenes de los segmentos pulmonares. Realizar simulaciones quirúrgicas. Además se realiza medición de enfisema mediante indice de Goddard.</p>
+				<h4 class="info_price">Precio: $100 dolares<br>Cuantificación  de enfisema: $50 dolares</h4>
+			</div>
+			<img class="service_img" src="img/volumetria_renal_1.png" alt="">
+		</div>
+		<div id="seguimiento_oncologico">
+			<div class="info_section">
+				<h2 class="info_title">Seguimiento Oncológico</h2>
+				<p class="info-text">Análisis comparativo de estudios en pacientes oncológicos para medir respuesta al tratamiento. Se utiliza los indices internacionales (RECIST), siendo la ventaja de este método que el software que se utiliza puede realizar localización automática de las lesiones previas, cuando se cuenta con el estudio base, compaginando los nuevos estudios pese a que sean realizados en distintos equipos (registro no rígido asistido por inteligencia artificial). Posteriormente se pueden ir agregando nuevos estudios. Los resultados se pueden mostrar en imágenes 3D, y con un reporte del resultado de RECIST que cuantifica los cambios.</p>
+				<h4 class="info_price">Precio: $100 dolares</h4>
+			</div>
+			<img class="service_img" src="img/volumetria_renal_1.png" alt="">
+		</div>
+		<div id="postprocesado_vascular">
+			<div class="info_section">
+				<h2 class="info_title">PostProcesado Vascular</h2>
+				<p class="info-text">Contamos con diversas herramientas para segmentación de estructuras vasculares, en vasos del cuello (carótidas y vertebrales), aorta y sus ramas. Se pueden realizar mediciones precisas de estenosis o aneurismas, caracterizar placas, y planeamiento endovascular.</p>
+				<h4 class="info_price">Precio: $100 dolares</h4>
+			</div>
+			<img class="service_img" src="img/volumetria_renal_1.png" alt="">
+		</div>
+		
 	</div>
 	
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>	
 </body>
 </html>
