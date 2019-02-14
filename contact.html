@@ -13,13 +13,22 @@
 
     <header>
 
-        <div class="top_bar col-12"></div>
+        <div class="top_bar col-12">
+		
+			<ul>
+			
+				<li><a href="https://www.instagram.com/clarity3d/" target="_blank"><img src="img/icons/instagram_white-01.png" alt=""></a></li>
+				<li><a href="https://www.facebook.com/Clarity-3D-257069535206410" target="_blank"><img src="img/icons/facebook_white-02.png" alt=""></a></li>
+				
+			</ul>
+			
+		</div>
 
         <div class="bottom_bar col-12">
 
             <div class="logo_area col-3">
 
-                <img src="img/logo.png" alt="logo">
+                <img src="img/logos/logo.png" alt="logo">
 
             </div>
             <div id="l_menu_area" class="menu_area col-9">
@@ -36,7 +45,7 @@
                 <a class="btn_preguntas hide" href="">
                     <h6>PREGUNTAS</h6>
                 </a>
-                <a class="btn_contacto" href="contact.html">
+                <a class="btn_contacto blue" href="contact.html">
                     <h6>CONTACTO</h6>
                 </a>
                 <a class="btn_staff hide" href="">
@@ -79,35 +88,61 @@
             </div>
         </div>
         <div id="contact_container">
-            <form class="contact_form" action="" method="post">
+            <form class="contact_form" action="contact_form.php" method="post">
                 <h2 class="form_title" for="">ENVIAR UN CORREO</h2>
-                <div style="width: 100%; margin-bottom: 1.5rem;">
-                    <input class="name_input" type="text" placeholder="Nombre" required>
-                    <input class="name_input" type="email" placeholder="Correo" required>
-                </div>
-                <input class="asunto_input" type="text" placeholder="Asunto" required>
-                <textarea class="text_input" type="text" placeholder="Escribe tu mensaje..." required></textarea>
-                <button class="button_form">ENVIAR</button>
+				<input class="form_input" type="text" placeholder="Nombre" name="name" required>
+				<input class="form_input" type="email" placeholder="Correo" name="email" required>
+                <textarea class="text_input" type="text" placeholder="Escribe tu mensaje..." name="comment" required></textarea>
+                <button class="button_form" type="submit">ENVIAR</button>
             </form>
             <div class="info_container">
-                <p>TELEFONOS</p>
-                <p style="margin-bottom: 0.1rem;">8888-8888</p>
-                <p style="margin-bottom: 1.7rem;">7777-7777</p>
+                <p>TELEFONO</p>
+                <p style="margin-bottom: 0.1rem;">+506 8583-2873</p>
+				<br>
+				<br>
+				<p>CORREO</p>
+                <p style="margin-bottom: 0.1rem;">clarity3dlab@gmail.com</p>
+				<br>
+				<br>
                 <p>DIRECCION</p>
-                <p style="margin-bottom: 0.1rem;">xxxxxxxxxxxxxxxxxxxxx</p>
-                <p style="margin-bottom: 1.7rem;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <p style="margin-bottom: 0.1rem;">San José, Costa Rica</p>
+				<br>
+				<br>
                 <p>HORAS DE ATENCION</p>
                 <p style="margin-bottom: 0.1rem;">Lunes - Viernes: 7am - 6pm</p>
                 <p style="margin-bottom: 0.1rem;">Sábados: 7am - 1pm</p>
                 <p style="margin-bottom: 1.7rem;">Domingos: cerrado.</p>
+				<br>
                 <div class="social_container">
-                    <a href=""><img class="social_img" src="img/instagram.png" alt=""></a>
-                    <a href=""><img class="social_img" src="img/facebook.png" alt=""></a>
+					<p>NUESTRAS REDES</p>
+                    <a href="https://www.instagram.com/clarity3d/" target="_blank"><img class="social_img" src="img/icons/instagram_blue_1.png" alt=""></a>
+                    <a href="https://www.facebook.com/Clarity-3D-257069535206410" target="_blank"><img class="social_img" src="img/icons/facebook_blue_1.png" alt=""></a>
                 </div>
             </div>
         </div>
+		<div id="thanks_popup">
+			<div>
+				<h2>¡Gracias por ponerse en contacto con nosotros!</h2>
+				<br>
+				<h2>En breve lo contactaremos a su correo electrónico</h2>
+			</div>
+		</div>
     </div>
-
+	
+	<footer>
+	
+		<h4>SIGUENOS</h4>
+		<br>
+		<ul>
+			<li><a href="https://www.instagram.com/clarity3d/" target="_blank"><img src="img/icons/instagram_white-01.png" alt=""></a></li>
+			<li><a href="https://www.facebook.com/Clarity-3D-257069535206410" target="_blank"><img src="img/icons/facebook_white-02.png" alt=""></a></li>	
+		</ul>
+		
+	
+		
+	</footer>
+	
+	
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
